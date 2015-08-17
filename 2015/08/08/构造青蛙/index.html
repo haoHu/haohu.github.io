@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="null">
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hexo">
+    <title>构造青蛙 - Hexo</title>
+    <meta name="author" content="John Doe">
+    
+    
+    <meta name="description" content="Don’t Dissect the Frog, Build it我们都是一路人古代求道的方士，通过不断的探索，用所积累的学识，追求参悟自身和天地的真理。
+今天的程序猿，通过学习的知识和技巧，追求着用代码，析构世间万物。
+两者的经历，出奇地相近。
+古代的方士，通过书写，记录下自己对真理的领悟；
+今天的程序猿，通过博客，分享自己对编程的感悟。
+两者殊途同归。
+程序猿们处在一个好时代现如今，我们有了he">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="构造青蛙">
+<meta property="og:url" content="http://yoursite.com/2015/08/08/构造青蛙/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Don’t Dissect the Frog, Build it我们都是一路人古代求道的方士，通过不断的探索，用所积累的学识，追求参悟自身和天地的真理。
+今天的程序猿，通过学习的知识和技巧，追求着用代码，析构世间万物。
+两者的经历，出奇地相近。
+古代的方士，通过书写，记录下自己对真理的领悟；
+今天的程序猿，通过博客，分享自己对编程的感悟。
+两者殊途同归。
+程序猿们处在一个好时代现如今，我们有了he">
+<meta property="og:updated_time" content="2015-08-09T04:19:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="构造青蛙">
+<meta name="twitter:description" content="Don’t Dissect the Frog, Build it我们都是一路人古代求道的方士，通过不断的探索，用所积累的学识，追求参悟自身和天地的真理。
+今天的程序猿，通过学习的知识和技巧，追求着用代码，析构世间万物。
+两者的经历，出奇地相近。
+古代的方士，通过书写，记录下自己对真理的领悟；
+今天的程序猿，通过博客，分享自己对编程的感悟。
+两者殊途同归。
+程序猿们处在一个好时代现如今，我们有了he">
+    
+    
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox-thumbs.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/tranquilpeak.css" type="text/css">
+    <!--STYLES END-->
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="/ ">Hexo</a>
+    </h1>
+    
+</header>
+            <nav id="sidebar" data-behavior="4">
+    
+    
+        <ul class="sidebar-buttons">
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/ "
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Início</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-categories"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categorias</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-tags"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-archives"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                    <span class="sidebar-button-desc">Arquivo</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link st-search-show-outputs"
+                         href="/#search"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Pesquisar</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/#about"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                    <span class="sidebar-button-desc">Sobre</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+        <ul class="sidebar-buttons">
+        
+    </ul>
+    
+        <ul class="sidebar-buttons">
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/atom.xml"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            构造青蛙
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" content="Sat Aug 08 2015 15:36:13 GMT+0800">
+	
+		    08/08/2015
+    	
+    </time>
+    
+</div>
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <h1 id="Don’t_Dissect_the_Frog,_Build_it">Don’t Dissect the Frog, Build it</h1><h2 id="我们都是一路人">我们都是一路人</h2><p>古代求道的方士，通过不断的探索，用所积累的学识，追求参悟自身和<br>天地的真理。</p>
+<p>今天的程序猿，通过学习的知识和技巧，追求着用代码，析构世间万物。</p>
+<p>两者的经历，出奇地相近。</p>
+<p>古代的方士，通过书写，记录下自己对真理的领悟；</p>
+<p>今天的程序猿，通过博客，分享自己对编程的感悟。</p>
+<p>两者殊途同归。</p>
+<h2 id="程序猿们处在一个好时代">程序猿们处在一个好时代</h2><p>现如今，我们有了hexo这样的个人博客利器，同时又拥有github这样无限的空间，剩下的就是我们激发我们写作的热情。</p>
+<p>你的博客就像你在虚拟世界中的一个小家，如果你的装修明显与别人不同，有着标新立异的创新，那么在这个同质化泛滥的世界中，很可能会轻松地引来更多的关注。让你在这个世界中大放异彩。自然也就激发你创作更多文章的动力。</p>
+<h2 id="为自己的博客装点一番">为自己的博客装点一番</h2><p>我们可以设计自己的皮肤，让我们的内容更具个性化，但是设计一套皮肤，我们要去看hexo的代码，修改他的代码，一路下来，往往会打击你的个性化装扮的积极性，到最后往往放弃掉了。那你可能会想，谁还能拯救我呢？</p>
+<p>《程序员的思维修炼》里如是说：</p>
+<blockquote>
+<p>Don‘t dissect the frog, build it.—-真正想要了解一只青蛙，传统的解剖不是办法，更好的方法是构造一只青蛙。</p>
+</blockquote>
+<p>在Google上我们会找到很多学习资料，教你如何利用hexo构建一个博客，如何将文章部署到github page上，如何添加插件，等等。至于如何构建一套符合自己风格，量身打造的博客，这个问题就庞大的多了。我将带大家像盖房子一样，搭建一个属于自己的博客。</p>
+<h2 id="hexo主题都包含什么">hexo主题都包含什么</h2><p>主题的工作就是掌控你的博客到底长什么样子，以及它所具备的功能。</p>
+<p><strong>hexo</strong>的主题存放路径在你工程目录的<code>themes</code>目录下，当你安装好hexo后，你会看到<code>themes</code>目录下默认会有一个<code>landscape</code>主题。我们暂时不需要搞清楚它里面到底有什么，东西太多了，我们不要解剖它。</p>
+<p>我们只需要大概了解它这个主题里都包括什么东西。</p>
+<p>我们进入landscpe主题目录，可以看到，它主要包含了</p>
+<pre><code><span class="string">|--Gruntfile.js # 用于构建主题的发布任务</span>
+<span class="string">|</span>
+<span class="string">|--LICENSE # 版权声明</span>
+<span class="string">|</span>
+<span class="string">|--README.md # 对主题的介绍和文档    </span>
+<span class="string">|</span>
+<span class="string">|--_config.yml # 主题模板的配置文件</span>
+<span class="string">|</span>
+<span class="string">|--layout/    # 模板文件</span>
+<span class="string">|</span>
+<span class="string">|--package.json # 主题生成需要的第三方插件和工具</span>
+<span class="string">|</span>
+<span class="string">|--scripts/ # js脚本</span>
+<span class="string">|</span>
+<span class="string">|--source/ # 主题相关的图片资源，插件资源，脚本文件</span>
+</code></pre><p>下面我们就分别介绍下这些部分都是做什么的。</p>
+<h2 id="模板(layout)">模板(layout)</h2><p>这是主题中必要元素。layout中唯一不能缺少的就是<code>index.ejs</code>，它是用来生成首页的。</p>
+<p>我们可以想到，一般博客都要有一个文章列表（常在首页看到），点击文章列表的某一篇文章，会跳转到文章页面。有了这两样，至少我们最基本的博客功能就具备了。所以我们最基本的需求就是要有一个<code>文章列表模板</code>和一个<code>文章详情模板</code></p>
+<p>我们可以像婴儿学步一样，利用模仿，通过机械的记忆，慢慢到理解。</p>
+<p>我们可以先在themes目录下建立一个与landscape同级的目录–garagekits，模仿landscape，把我们自己主题的目录的结构搭建起来。</p>
+<p>需要注意的是，hexo默认使用的主题是landscape，我们要想学习模板，先不要忘记修改一下hexo的<code>_config.yml</code>文件的<code>theme</code>字段，让hexo使用我们自己的主题–garagekits。</p>
+<p>我们的主题现在增加了一些文件：</p>
+<pre><code>garagekits
+ |<span class="string">
+ </span>|<span class="string">--layout
+ </span>|<span class="string">     </span>|<span class="string">--_partial
+ </span>|<span class="string">     </span>|<span class="string">     </span>|<span class="string">-- post_entry.ejs #主页文章列表中每项模板
+ </span>|<span class="string">     </span>|
+ |<span class="string">     </span>|<span class="string">--index.ejs #网站主页模板，必不可少
+ </span>|<span class="string">     </span>|<span class="string">--post.ejs # 每篇单独文章的模板
+ </span>|
+</code></pre><p>我们要为每个模板添加些代码</p>
+<p><strong>index.ejs:</strong></p>
+<pre><code><span class="xml"><span class="tag">&lt;<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">title</span>&gt;</span>index.html<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    </span>&lt;%<span class="perl"> site.posts.<span class="keyword">sort</span>(<span class="string">"date"</span>, <span class="string">"desc"</span>).<span class="keyword">each</span>(function (post) { </span>%&gt;<span class="xml">
+        </span>&lt;%<span class="perl">- partial(<span class="string">"_partial/post_entry"</span>, {post : post}) </span>%&gt;<span class="xml">
+    </span>&lt;%<span class="perl"> }) </span>%&gt;<span class="xml">
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span></span>
+</code></pre><p><strong>post_entry.ejs</strong></p>
+<pre><code><span class="xml"><span class="tag">&lt;<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span>&gt;</span></span>&lt;%<span class="perl">- post.date.<span class="keyword">format</span>(<span class="string">"YYYY-MM-DD"</span>) </span>%&gt;<span class="xml"><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"</span></span></span>&lt;%<span class="perl">- config.root </span>%&gt;<span class="xml"><span class="tag"><span class="value"></span></span></span>&lt;%<span class="perl">- post.path </span>%&gt;<span class="xml"><span class="tag"><span class="value">"</span>&gt;</span></span>&lt;%<span class="perl">- post.title </span>%&gt;<span class="xml"><span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span>
+</code></pre><p><strong>post.ejs</strong></p>
+<pre><code><span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span><span class="tag">&lt;%- page.title %&gt;</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;/head&gt;</span>    
+<span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;%- page.title %&gt;</span>
+    <span class="tag">&lt;hr&gt;</span>
+    <span class="tag">&lt;%- page.content %&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+</code></pre><p>其中<code>ejs</code>是一种HTML的模板语言，具体的文档可以<a href="https://github.com/mde/ejs" target="_blank" rel="external">点击这里</a>查看。</p>
+<pre><code>我们这里主要用到了两种：
+<span class="number">1.</span> &lt;<span class="preprocessor">%</span>- <span class="preprocessor">%</span>&gt; 就是把要写到页面上的内容包含其中
+<span class="number">2.</span> &lt;<span class="preprocessor">%</span> <span class="preprocessor">%</span>&gt; 就是模板运行需要的js代码，它最终不会输出到页面中
+</code></pre><p>我们还用到了hexo的一些全局变量，例如<code>site</code>、<code>page</code>等，可以<a href="https://hexo.io/docs/variables.html#Global_Variables" target="_blank" rel="external">点击这里</a>查看。</p>
+<p>同时我们也会用到hexo的一些工具函数，例如<code>partial</code>，具体可以<a href="https://hexo.io/docs/helpers.html" target="_blank" rel="external">点击这里</a>查看</p>
+<p>到这里，我们主题的基本功能算是有了，至于是否美观，我们先不去考虑。让我们写两篇文章，测试一下我们的模板是否正常运行。</p>
+<p>文章创作中…</p>
+<p>写好文章后，我们只需要运行hexo server，就能在本地预览自己的博客的效果了。</p>
+<h2 id="我的博客要酱紫">我的博客要酱紫</h2><p>到上一节，我们至少能让我们的站点正常显示出来，但是我们没有给它添加任何的样式或交互，作为一个程序猿来说，这是真心不爽的。</p>
+<p>下面就要发挥我们的特长，将站点装饰一番了。</p>
+<p>我们继续学步，参考一下landscape中的目录结构，我们可以惊奇的发现人家有个<code>source</code>目录，打开来看一下，要西，<code>css</code>、<code>js</code>、<code>fancybox</code>这不是一应俱全嘛。</p>
+<p>那我们也可以在自己的主题目录下，同样建立一个<code>source</code>目录</p>
+<pre><code>garagekits
+ |<span class="string">
+ </span>|<span class="string">--layout
+ </span>|<span class="string">     </span>|<span class="string">--_partial
+ </span>|<span class="string">     </span>|<span class="string">     </span>|<span class="string">-- post_entry.ejs #主页文章列表中每项模板
+ </span>|<span class="string">     </span>|
+ |<span class="string">     </span>|<span class="string">--index.ejs #网站主页模板，必不可少
+ </span>|<span class="string">     </span>|<span class="string">--post.ejs # 每篇单独文章的模板
+ </span>|
+ |<span class="string">--source
+ </span>|<span class="string">     </span>|<span class="string">--css
+ </span>|<span class="string">     </span>|<span class="string">     </span>|<span class="string">--index.css
+ </span>|<span class="string">     </span>|
+ |<span class="string">     </span>|<span class="string">--js
+ </span>|<span class="string">     </span>|<span class="string">     </span>|<span class="string">--script.js
+ </span>|<span class="string">     </span>|
+</code></pre><p>现在，一个主题最常见的基本部分已经初具规模了。万事俱备，只差你的idea了。现在开始就是你发挥你造物主的天才，构建一个与众不同的博客吧！！这酸爽，谁玩谁知道。</p>
+
+            
+                
+
+            
+        </div>
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">ETIQUETADO em</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/hexo-theme/">hexo theme</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/08/07/新文章/" data-tooltip="新文章">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">PRÓXIMO</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2015 John Doe. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/08/07/新文章/" data-tooltip="新文章">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">PRÓXIMO</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/08/08/构造青蛙/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <h4 id="about-card-name">John Doe</h4>
+        
+            <h5 id="about-card-bio"><p>author.bio</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>author.job</p>
+
+            </h5>
+        
+        
+    </div>
+</div>
+
+        <div id="cover" style="background-image:url('http://res.cloudinary.com/tranquilpeak-hexo-theme/image/upload/v1438975482/v1.3.0-cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/jquery.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.fancybox.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+<script src="/assets/js/tranquilpeak.js" type="text/javascript"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>
