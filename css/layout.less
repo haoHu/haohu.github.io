@@ -1,0 +1,127 @@
+html, body {
+	position : relative; height : 100%; width : 100%; overflow : hidden;
+	font-family: @xFontSans; font-size : @xFontSize-md; line-height : 1.5em;
+	letter-spacing : 1px;
+	-webkit-font-smoothing : subpcel-antialiased;
+	font-smoothing : subpcel-antialiased;
+	background-color : @xPageBG; color : @xTextColor;
+}
+
+// layout 
+#container {
+	.x-layout-by-position(absolute, 0, 0, 0, 0, 1); overflow : auto;
+	background-color : transparent;
+	padding : @headerHeight 0 @footerHeight;
+}
+
+#header {
+	.x-layout-by-position(fixed, 0, 0, null, 0, 2);
+	width : 100%; height : @headerHeight;
+	background-color: @xHeaderBG;
+	color : @xHeaderColor;
+	a {color : @xHeaderColor; text-decoration: none;}
+	.header-title {
+		position : relative; top : 10px;
+		
+	}
+	#logo_wrap {
+		height : 60px; line-height: 60px; margin : 0 20px 0;
+		vertical-align: top;
+		font-family: @xFontCursive; color : #fff;
+		img {width : 100px; height : 100px;}
+	}
+	#subtitle_wrap {
+		margin : 0; font-size: @xFontSize-xl;
+		position : absolute; left : 140px; top : 60px; 
+		font-family: @xFontCursive;
+	}
+	.header-nav {
+		position: absolute; right : 20px; bottom : 20px;
+		.nav-link {
+			font-family: @xFontCursive; font-size : @xFontSize-lg;
+		} 
+	}
+	.header-search {
+		display: none;
+	}
+}
+
+#wrap {
+	height : auto; width : 100%;
+}
+
+#footer {
+	.x-layout-by-position(fixed, null, 0, 0, 0, 2);
+	width : 100%; height : @footerHeight;
+	background-color : @xFooterBG;
+	color : @xFooterColor;
+	.copyright {
+		font-family: @xFontSerif; font-size : @xFontSize-md;
+		padding : 20px 20px 0; text-align: right;
+	}
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @xFontSans; font-weight: 700;
+	color : @xGrayLight;
+}
+
+h1 {
+	font-size : @xFontSize-xl;
+}
+h2 {
+	font-size : @xFontSize-lg;
+}
+h3, h4 {
+	font-size : @xFontSize-md;
+}
+h5 {
+	font-size : @xFontSize-sm;
+}
+h6 {
+	font-size : @xFontSize-xs;
+}
+
+p {
+	font-family : @xFontSerif;
+	line-height: 1.5em;
+}
+
+a {
+	display: inline-block; padding : 0;
+	color : @xLinkColor;
+	&:hover, &:active {
+		color : @xLinkHoverColor;
+	}
+}
+
+a.link-unstyled, a.link-unstyled:hover, a.link-unstyled:active {
+	text-decoration : none!important;
+	cursor : pointer!important;
+	color : inherit!important;
+}
+
+.post-shorten {
+	border-bottom : 1px dashed @xBorderColor;
+	.postshorten-title, .postshorten-meta {
+		display: inline-block;
+	}
+	.postshorten-meta {
+		font-size: @xFontSize-sm;
+	}
+	.postshorten-body p {
+		text-indent: 2em;
+	}
+}
+.post-link {
+	display: inline-block; padding : 6px 12px 7px;
+	font-size: @xFontSize-md; font-weight: bold;
+	border : 1px solid @xBorderColor; border-radius: 5px;
+	background-color: @xGrayLighter; color : @xGrayDark;
+	&:hover {
+		border : 1px solid @xGrayLighter;
+		background-color: @xGrayDarker; color : #fff;
+		text-decoration: none;
+	}
+}
