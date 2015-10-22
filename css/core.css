@@ -50,7 +50,7 @@ body {
   line-height: 60px;
   margin: 0 20px 0;
   vertical-align: top;
-  font-family: Wawati SC, Comic Sans MS, cursive;
+  font-family: Wawati SC, Comic Sans MS, "方正舒体", cursive;
   color: #fff;
 }
 #header #logo_wrap img {
@@ -63,7 +63,7 @@ body {
   position: absolute;
   left: 140px;
   top: 60px;
-  font-family: Wawati SC, Comic Sans MS, cursive;
+  font-family: Wawati SC, Comic Sans MS, "方正舒体", cursive;
 }
 #header .header-nav {
   position: absolute;
@@ -71,7 +71,7 @@ body {
   bottom: 20px;
 }
 #header .header-nav .nav-link {
-  font-family: Wawati SC, Comic Sans MS, cursive;
+  font-family: Wawati SC, Comic Sans MS, "方正舒体", cursive;
   font-size: 18px;
 }
 #header .header-search {
